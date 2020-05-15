@@ -8,7 +8,7 @@ Flixster is an app that allows users to browse movies from the [The Movie Databa
 ## Flixster Part 1
 
 ### User Stories
-`TODO://` In the **User Stories section below**, add an `x` in the `-[ ]` like this `- [x]` for any user story you complete. (🚫 Remove this paragraph after after checking off completed user stories)
+- [x] (10pts) User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
 
 ### App Walkthough GIF
 
