@@ -16,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.Target;
 import com.example.flixster.DetailActivity;
 import com.example.flixster.R;
 import com.example.flixster.models.Movie;
@@ -89,7 +90,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>
                 imageUrl = movie.getPosterPath();
             }
 
-            Glide.with(context).load(imageUrl).into(ivPoster);
+            Glide.with(context).load(imageUrl).override(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL).placeholder(R.mipmap.placeholder).error(R.mipmap.error).into(ivPoster);
 
             container.setOnClickListener(new View.OnClickListener() {
                 @Override
